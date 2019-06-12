@@ -1,10 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Import Tetris component
+import Tetris from "./components/tetris";
+
+// Import styles
+import "./App.css";
+
+// Import service worker
+import * as serviceWorker from "./serviceWorker";
+
+ReactDOM.render(
+  <Tetris boardWidth="14" boardHeight="20" />,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
